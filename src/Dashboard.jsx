@@ -27,6 +27,7 @@ export default function Dashboard() {
   }, []);
 
   return (
+    
     <div className="min-h-screen bg-white text-black">
       <header className="text-center py-12 px-4">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">
@@ -46,30 +47,30 @@ export default function Dashboard() {
         />
       </section>
 
-      <section className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-center text-sm md:text-base">
-        <div>
+      <section className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-center text-sm md:text-base mt-6">
+        <div className="bg-gray-800 text-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-transform p-4">
           <p className="font-semibold">Hora</p>
-          <p className="text-gray-700">{stats.hora}</p>
+          <p>{stats.hora}</p>
         </div>
-        <div>
+        <div className="bg-gray-800 text-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-transform p-4">
           <p className="font-semibold">Fecha</p>
-          <p className="text-gray-700">{stats.fecha}</p>
+          <p>{stats.fecha}</p>
         </div>
-        <div>
+        <div className="bg-gray-800 text-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-transform p-4">
           <p className="font-semibold">Peatones Cruzando</p>
-          <p className="text-gray-700">{stats.peatones_cruzando}</p>
+          <p>{stats.peatones_cruzando}</p>
         </div>
-        <div>
+        <div className="bg-gray-800 text-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-transform p-4">
           <p className="font-semibold">Peatones del día</p>
-          <p className="text-gray-700">{stats.peatones_dia}</p>
+          <p>{stats.peatones_dia}</p>
         </div>
-        <div>
+        <div className="bg-gray-800 text-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-transform p-4">
           <p className="font-semibold">Vehículos</p>
-          <p className="text-gray-700">{stats.vehiculos}</p>
+          <p>{stats.vehiculos}</p>
         </div>
-        <div>
+        <div className="bg-gray-800 text-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-transform p-4">
           <p className="font-semibold">Usuarios de silla de ruedas</p>
-          <p className="text-gray-700">{stats.silla_ruedas}</p>
+          <p>{stats.silla_ruedas}</p>
         </div>
       </section>
     </div>
