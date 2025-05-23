@@ -13,7 +13,7 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const res = await fetch('http://localhost:8000/api/stats');
+        const res = await fetch('https://wheelchair-backend.onrender.com/api/stats');
         const data = await res.json();
         setStats(data);
       } catch (error) {
@@ -41,7 +41,7 @@ export default function Dashboard() {
 
       <section className="flex justify-center mb-10">
         <img
-          src="http://localhost:8000/video_feed"
+          src="https://wheelchair-backend.onrender.com/video_feed"
           alt="Detección en vivo"
           className="rounded-xl shadow-xl max-h-[480px] object-contain"
         />
